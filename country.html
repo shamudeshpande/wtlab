@@ -1,0 +1,27 @@
+<style>
+p{color:red;
+font-weight:bold;
+font-size:50px;
+}
+</style>
+<body>
+<center>
+<form name="myform">
+<h2>select country</h2>
+<select name="country" onchange="disp()">
+<option>india/option>
+</select>
+<p id="state"></p>
+</form>
+</center>
+</body>
+<script>
+function disp(){
+var country=myform.country.value;
+var id=document.getElementById("state");
+switch(country){
+case "india":id.innerHTML="new delhi";break;
+}
+}
+</script>
+</html>
